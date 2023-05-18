@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+class User:
+    def __init__(self, name, password, email):
+        self.name = name
+        self.password = password
+        self.email = email
+    def register(self):
+        new_user = User(self,name,password,email)
+        return new_user
+    def login(self, email, password):
+        if self.email == email and self.password == password:
+            print("Login successful!")
+        else:
+            print("Invalid login credentials")
+=======
    import re
 
 class SignUp:
@@ -48,3 +63,4 @@ class SignUp:
             print("User registered successfully!")
         else:
             print("Registration failed.")
+>>>>>>> 0858b70a4c8dac5e4ab9e8f24aae337bab394fbd
