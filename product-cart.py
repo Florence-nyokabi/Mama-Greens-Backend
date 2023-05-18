@@ -1,21 +1,21 @@
-class Product:
-    def __init__(self, name, price, quantity):
-        self.name = name
-        self.price = price
-        self.quantity = quantity
+from products import Product
 
-class Cart:
-    def __init__(self):
-        self.products = []
+class ShoppingCart:
+    def __init__(self, products):
+        self.products = products
 
-    def add_product(self, product):
+    def add_item(self, product):
         self.products.append(product)
 
-    def remove_product(self, product):
+    def remove_item(self, product):
         self.products.remove(product)
 
-class User:
-    def __init__(self, name, email):
-        self.name = name
-        self.email = email
-        self.cart = Cart()
+    def checkout(self):
+        total = 0
+        for product in self.products:
+            total += product.price
+        return total
+
+p1 = Product("mango", 10, "Fruit")
+p2 = Product("cabbage", 50, "vagetable")
+cart = ShoppingCart([p1, p2])
