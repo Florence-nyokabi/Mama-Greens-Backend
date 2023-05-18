@@ -25,6 +25,10 @@ class Order:
         print(f"Total Price: {self.total_price}")
     
 # grocery1 = Grocery("mango", 10, 100)
+# grocery2 = Grocery("mango", 10, 100)
+
 # order1 = Order("Florence Nyokabi")
+
 # order1.add_item(grocery1)
+# order1.add_item(grocery2)
 # order1.view_order()
