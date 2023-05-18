@@ -13,16 +13,18 @@ class Order:
     def add_item(self, grocery_item):
         self.grocery_items.append(grocery_item)
         self.total_price += grocery_item.price
+        return self.grocery_items
     
     def remove_item(self, grocery_item):
         self.grocery_items.remove(grocery_item)
         self.total_price -= grocery_item.price
+        return self.grocery_items
     
     def view_order(self):
         print(f"Customer Name: {self.customer_name}")
         for item in self.grocery_items:
-            print(f"Item Name: {item.name}, Quantity: {item.quantity}, Price: {item.price}")
-        print(f"Total Price: {self.total_price}")
+            print(f"You ordered: {item.quantity} {item.name} and the price is: {item.price}")
+        print(f"The total price for the order is: {self.total_price}")
     
 # grocery1 = Grocery("mango", 10, 100)
 # grocery2 = Grocery("mango", 10, 100)
