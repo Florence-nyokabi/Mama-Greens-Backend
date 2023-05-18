@@ -1,4 +1,8 @@
-from products import Product
+class Item:
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
 
 class ShoppingCart:
     def __init__(self, products):
@@ -16,6 +20,8 @@ class ShoppingCart:
             total += product.price
         return total
 
-p1 = Product("mango", 10, "Fruit")
-p2 = Product("cabbage", 50, "vagetable")
-cart = ShoppingCart([p1, p2])
+# item1 = Item("mango", 10, "Fruit")
+# item2 = Item("cabbage", 50, "vagetable")
+# cart = ShoppingCart([item1, item2])
+# total_price = cart.checkout()
+# print(total_price)
