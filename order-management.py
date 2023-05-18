@@ -23,3 +23,8 @@ class Order:
         for item in self.grocery_items:
             print(f"Item Name: {item.name}, Quantity: {item.quantity}, Price: {item.price}")
         print(f"Total Price: {self.total_price}")
+    
+# grocery1 = Grocery("mango", 10, 100)
+# order1 = Order("Florence Nyokabi")
+# order1.add_item(grocery1)
+# order1.view_order()
