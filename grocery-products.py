@@ -1,4 +1,4 @@
-from products import Product
+from product_cart  import Item
 
 class ProductCategory:
     def __init__(self, name, description, price):
