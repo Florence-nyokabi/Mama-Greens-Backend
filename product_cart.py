@@ -18,7 +18,7 @@ class ShoppingCart:
         total = 0
         for product in self.products:
             total += product.price
-        return total
+        return f" The total price for the products is:  {total}"
 
 # item1 = Item("mango", 10, "Fruit")
 # item2 = Item("cabbage", 50, "vagetable")
