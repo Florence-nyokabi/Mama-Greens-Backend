@@ -19,7 +19,8 @@ class ShoppingCart:
         for product in self.products:
             total += product.price
         return f" The total price for the products is:  {total}"
-
+    
+# instance
 # item1 = Item("mango", 10, "Fruit")
 # item2 = Item("cabbage", 50, "vagetable")
 # cart = ShoppingCart([item1, item2])
