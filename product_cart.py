@@ -6,7 +6,7 @@ class Item:
 
 class ShoppingCart:
     def __init__(self, products):
-        self.products = products
+        self.products = []
 
     def add_item(self, product):
         self.products.append(product)
@@ -19,7 +19,8 @@ class ShoppingCart:
         for product in self.products:
             total += product.price
         return f" The total price for the products is:  {total}"
-
+    
+# instance
 # item1 = Item("mango", 10, "Fruit")
 # item2 = Item("cabbage", 50, "vagetable")
 # cart = ShoppingCart([item1, item2])
