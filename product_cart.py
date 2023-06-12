@@ -20,7 +20,7 @@ class ShoppingCart:
             total += product.price
         return f" The total price for the products is:  {total}"
     
-# instance
+# instance..
 # item1 = Item("mango", 10, "Fruit")
 # item2 = Item("cabbage", 50, "vagetable")
 # cart = ShoppingCart([item1, item2])
